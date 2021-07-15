@@ -13,3 +13,6 @@ Download the following dependencies in IDE:
 </ul>
 
 Note :: Load the images and convert them to RGB format from BRG, as per the machine accepting format.
+
+main.py --> only face recognition file <br>
+app.py  --> complete model execution file
