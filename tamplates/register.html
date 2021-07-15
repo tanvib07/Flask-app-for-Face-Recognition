@@ -1,0 +1,96 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <style>
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#5b9aa0;  
+    font-family: 'Arial';  
+}  
+.login{  
+	float:center;
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #622569;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #622569;  
+    padding: 20px;  
+}  
+label{  
+    color: #d6d4e0;  
+    font-size: 17px;  
+}  
+#Uname{  
+	
+    width: 350px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+
+
+.button {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #b8a9c9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #d6d4e0;
+}
+
+
+.button:active {
+  background-color: #d6d4e0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+a{  
+     
+    color: red;  
+}  
+ </style>  
+</head>    
+<body>    
+    <h2>Registration Page</h2><br>    
+
+    <form id="adduser" method="post" action="/adduser">    
+        <div class="login">    
+            <div id="container">
+                <div class="row">
+                    <div class="col-lg-8  offset-lg-2">
+                        <img src="{{ url_for('video_feed') }}" width="100%">
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+ 
+        <button class="button">Register</button>      
+        <br><br>    
+    </form>
+        <label>Account already exists ?</label> <a href="/">Go Back</a>    
+         
+</div>    
+</body>    
+</html>     
